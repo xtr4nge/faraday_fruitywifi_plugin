@@ -142,7 +142,7 @@ output = []
 if _exec == "/log/dhcp":
     for item in json_output:
         if item.strip() != "":
-            output = [item.split(" ")]
+            output.append(item.split(" "))
 else:
     output = json_output
 
